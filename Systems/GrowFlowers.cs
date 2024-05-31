@@ -11,7 +11,7 @@ namespace ParentsEvent.Systems
     {
         private EntityQuery _emptyDirtPatches;
         private static float renewtime = 5f;
-        
+
         protected override void Initialise()
         {
             base.Initialise();
@@ -22,7 +22,7 @@ namespace ParentsEvent.Systems
         protected override void OnUpdate()
         {
             SGameTime sGameTime = GetSingleton<SGameTime>();
-            
+
             using NativeArray<Entity> emptyDirtPatches = _emptyDirtPatches.ToEntityArray(Allocator.Temp);
 
             for (int i = 0; i < emptyDirtPatches.Length; i++)
@@ -53,7 +53,7 @@ namespace ParentsEvent.Systems
                         }
                     }
                 }
-                
+
                 renewableFlowerPatch.LastIndex = index;
                 EntityManager.SetComponentData(dirtPatch, renewableFlowerPatch);
 

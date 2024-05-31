@@ -11,7 +11,7 @@ namespace ParentsEvent.Components
         public float TimeSinceLastItem;
         public bool ShouldSelectRandom;
         public int LastIndex;
-        
+
         public bool RequiresWatering;
         public float TimeSinceLastWater;
         public float TimeToDry;

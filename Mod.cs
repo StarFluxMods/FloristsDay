@@ -19,14 +19,16 @@ namespace ParentsEvent
     {
         public const string MOD_GUID = "com.starfluxgames.parentsday";
         public const string MOD_NAME = "Florist's Day";
-        public const string MOD_VERSION = "0.1.0";
+        public const string MOD_VERSION = "0.1.1";
         public const string MOD_AUTHOR = "StarFluxGames";
         public const string MOD_GAMEVERSION = ">=1.1.7";
 
         public static AssetBundle Bundle;
         public static KitchenLogger Logger;
 
-        public Mod() : base(MOD_GUID, MOD_NAME, MOD_AUTHOR, MOD_VERSION, MOD_GAMEVERSION, Assembly.GetExecutingAssembly()) { }
+        public Mod() : base(MOD_GUID, MOD_NAME, MOD_AUTHOR, MOD_VERSION, MOD_GAMEVERSION, Assembly.GetExecutingAssembly())
+        {
+        }
 
         protected override void OnInitialise()
         {
@@ -50,7 +52,7 @@ namespace ParentsEvent
                 {
                     wateringCanProvider.Processes.Add(process);
                 }
-                
+
                 args.gamedata.Get<Item>(ItemReferences.NutsChopped).DerivedProcesses.Add(new Item.ItemProcess
                 {
                     Process = args.gamedata.Get<Process>(ProcessReferences.Cook),
@@ -61,4 +63,3 @@ namespace ParentsEvent
         }
     }
 }
-

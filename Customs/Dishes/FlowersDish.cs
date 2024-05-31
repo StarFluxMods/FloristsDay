@@ -13,6 +13,7 @@ namespace ParentsEvent.Customs.Dishes
     {
         public override string UniqueNameID => "FlowersDish";
         public override DishType Type => DishType.Main;
+
         public override List<Dish.MenuItem> ResultingMenuItems => new List<Dish.MenuItem>
         {
             new Dish.MenuItem

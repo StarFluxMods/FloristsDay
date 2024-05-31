@@ -9,6 +9,7 @@ namespace ParentsEvent.Systems
     public class DryDirtOverTime : GameSystemBase, IModSystem
     {
         private EntityQuery _dirtPatches;
+
         protected override void Initialise()
         {
             base.Initialise();
@@ -30,7 +31,6 @@ namespace ParentsEvent.Systems
                         EntityManager.SetComponentData(dirtPatch, cRenewableFlowerPatch);
                     }
                 }
-
             }
         }
     }

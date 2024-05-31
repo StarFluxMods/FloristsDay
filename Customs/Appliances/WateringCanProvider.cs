@@ -44,10 +44,10 @@ namespace ParentsEvent.Customs.Appliances
         public override void OnRegister(Appliance gameDataObject)
         {
             base.OnRegister(gameDataObject);
-            
+
             HoldPointContainer holdPointContainer = gameDataObject.Prefab.AddComponent<HoldPointContainer>();
             LimitedItemSourceView limitedItemSourceView = gameDataObject.Prefab.AddComponent<LimitedItemSourceView>();
-            
+
             holdPointContainer.HoldPoint = gameDataObject.Prefab.GetChild("Block/HoldPoint").transform;
 
             limitedItemSourceView.Items = new List<GameObject>

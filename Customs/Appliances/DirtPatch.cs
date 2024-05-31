@@ -15,6 +15,7 @@ namespace ParentsEvent.Customs.Appliances
     {
         public override string UniqueNameID => "DirtPatch";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("DirtPatch").AssignMaterialsByNames();
+
         public override List<IApplianceProperty> Properties => new List<IApplianceProperty>
         {
             new CItemHolder(),
@@ -49,11 +50,11 @@ namespace ParentsEvent.Customs.Appliances
         public override void OnRegister(Appliance gameDataObject)
         {
             base.OnRegister(gameDataObject);
-            
+
             DirtPatchClientView dirtPatchClientView = gameDataObject.Prefab.AddComponent<DirtPatchClientView>();
             HoldPointContainer holdPointContainer = gameDataObject.Prefab.AddComponent<HoldPointContainer>();
-            
-            dirtPatchClientView.HoldPoints = new []
+
+            dirtPatchClientView.HoldPoints = new[]
             {
                 gameDataObject.Prefab.GetChild("HoldPoints/HoldPoint1"),
                 gameDataObject.Prefab.GetChild("HoldPoints/HoldPoint2"),
@@ -62,7 +63,7 @@ namespace ParentsEvent.Customs.Appliances
                 gameDataObject.Prefab.GetChild("HoldPoints/HoldPoint8"),
                 gameDataObject.Prefab.GetChild("HoldPoints/HoldPoint9")
             };
-            
+
             DirtPatchView dirtPatchView = gameDataObject.Prefab.AddComponent<DirtPatchView>();
             dirtPatchView.WateredLayer = gameDataObject.Prefab.GetChild("DirtPatch/WetLand");
         }

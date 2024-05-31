@@ -13,7 +13,7 @@ namespace ParentsEvent.Customs.ItemGroups
     {
         public override string UniqueNameID => "FilledWateringCan";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("FilledWateringCan").AssignMaterialsByNames();
-        
+
         public override List<ItemGroup.ItemSet> Sets => new List<ItemGroup.ItemSet>
         {
             new ItemGroup.ItemSet
@@ -35,13 +35,12 @@ namespace ParentsEvent.Customs.ItemGroups
                 Max = 1
             }
         };
-        
+
         public override bool AllowSplitMerging => true;
         public override bool PreventExplicitSplit => true;
         public override bool SplitByComponents => true;
         public override Item SplitByComponentsHolder => (Item)GDOUtils.GetCustomGameDataObject<EmptyWateringCan>().GameDataObject;
         public override int SplitCount => 3;
         public override float SplitSpeed => 1;
-
     }
 }

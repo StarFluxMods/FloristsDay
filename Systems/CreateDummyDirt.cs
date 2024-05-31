@@ -11,6 +11,7 @@ namespace ParentsEvent.Systems
     public class FillUnwateredDirtPatches : DaySystem, IModSystem
     {
         private EntityQuery _dirtPatches;
+
         protected override void Initialise()
         {
             base.Initialise();

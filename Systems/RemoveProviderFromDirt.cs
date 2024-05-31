@@ -9,6 +9,7 @@ namespace ParentsEvent.Systems
     public class RemoveProviderFromDirt : GameSystemBase, IModSystem
     {
         private EntityQuery _dirtPatchQuery;
+
         protected override void Initialise()
         {
             base.Initialise();

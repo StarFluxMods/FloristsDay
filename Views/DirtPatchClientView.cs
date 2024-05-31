@@ -11,6 +11,7 @@ namespace ParentsEvent.Views
         public GameObject[] HoldPoints;
         private GameObject HoldPoint => HoldPoints.Length > 0 ? HoldPoints[UnityEngine.Random.Range(0, HoldPoints.Length)] : null;
         private HoldPointContainer HoldPointContainer => GetComponent<HoldPointContainer>();
+
         private void Awake()
         {
             if (HoldPoint != null)

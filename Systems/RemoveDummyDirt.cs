@@ -14,12 +14,13 @@ namespace ParentsEvent.Systems
     {
         private EntityQuery _dirtPatches;
         private EntityQuery _players;
+
         protected override void Initialise()
         {
             base.Initialise();
             _dirtPatches = GetEntityQuery(new QueryHelper()
                 .All(typeof(CRenewableFlowerPatch), typeof(CItemHolder), typeof(CItemHolderPreventTransfer)));
-            
+
             _players = GetEntityQuery(new QueryHelper()
                 .All(typeof(CPlayer)));
         }

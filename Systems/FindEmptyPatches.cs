@@ -9,7 +9,7 @@ namespace ParentsEvent.Systems
     public class FindEmptyPatches : GameSystemBase, IModSystem
     {
         private EntityQuery _DirtPatches;
-        
+
         protected override void Initialise()
         {
             base.Initialise();

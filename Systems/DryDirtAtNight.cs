@@ -9,12 +9,14 @@ namespace ParentsEvent.Systems
     public class DryDirtAtNight : StartOfNightSystem, IModSystem
     {
         private EntityQuery _dirtPatches;
+
         protected override void Initialise()
         {
             base.Initialise();
             _dirtPatches = GetEntityQuery(new QueryHelper()
                 .All(typeof(CRenewableFlowerPatch), typeof(CItemHolder)));
         }
+
         protected override void OnUpdate()
         {
             using NativeArray<Entity> dirtPatches = _dirtPatches.ToEntityArray(Allocator.Temp);

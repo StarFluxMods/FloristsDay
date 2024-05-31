@@ -13,6 +13,7 @@ namespace ParentsEvent.Customs.Dishes
     {
         public override string UniqueNameID => "RolledAlmondDessertDish";
         public override DishType Type => DishType.Dessert;
+
         public override List<Dish.MenuItem> ResultingMenuItems => new List<Dish.MenuItem>
         {
             new Dish.MenuItem
@@ -53,6 +54,7 @@ namespace ParentsEvent.Customs.Dishes
         };
 
         public override UnlockGroup UnlockGroup => UnlockGroup.Dish;
+
         public override List<(Locale, UnlockInfo)> InfoList => new List<(Locale, UnlockInfo)>
         {
             (

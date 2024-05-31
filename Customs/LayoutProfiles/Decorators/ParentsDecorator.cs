@@ -42,11 +42,10 @@ namespace ParentsEvent.Customs.LayoutProfiles.Decorators
                     });
                 }
             }
-            
+
             Mod.Logger.LogInfo("Decorated parents room with " + num + " features");
             list.ForEach(delegate(CLayoutAppliancePlacement p) { this.Decorations.Add(p); });
             return true;
-
         }
     }
 }

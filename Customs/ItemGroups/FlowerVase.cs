@@ -72,7 +72,7 @@ namespace ParentsEvent.Customs.ItemGroups
             ItemGroupView view = gameDataObject.Prefab.GetComponent<ItemGroupView>();
 
             view.ComponentGroups = new List<ItemGroupView.ComponentGroup>();
-            
+
             view.ComponentGroups.Add(new ItemGroupView.ComponentGroup
             {
                 Item = (Item)GDOUtils.GetCustomGameDataObject<FlowerRed>().GameDataObject,
@@ -83,7 +83,7 @@ namespace ParentsEvent.Customs.ItemGroups
                     gameDataObject.Prefab.GetChild("Group 3/Point3/"),
                 }
             });
-            
+
             view.ComponentGroups.Add(new ItemGroupView.ComponentGroup
             {
                 Item = (Item)GDOUtils.GetCustomGameDataObject<FlowerBlue>().GameDataObject,
@@ -94,7 +94,7 @@ namespace ParentsEvent.Customs.ItemGroups
                     gameDataObject.Prefab.GetChild("Group 3/Point1/"),
                 }
             });
-            
+
             view.ComponentGroups.Add(new ItemGroupView.ComponentGroup
             {
                 Item = (Item)GDOUtils.GetCustomGameDataObject<FlowerGreen>().GameDataObject,
@@ -105,7 +105,7 @@ namespace ParentsEvent.Customs.ItemGroups
                     gameDataObject.Prefab.GetChild("Group 3/Point2/"),
                 }
             });
-            
+
             view.ComponentGroups.Add(new ItemGroupView.ComponentGroup
             {
                 Item = (Item)GDOUtils.GetCustomGameDataObject<EmptyVase>().GameDataObject,

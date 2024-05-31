@@ -15,6 +15,7 @@ namespace ParentsEvent.Customs.Appliances
     {
         public override string UniqueNameID => "FlowerPot";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("FlowerPot").AssignMaterialsByNames();
+
         public override List<IApplianceProperty> Properties => new List<IApplianceProperty>
         {
             new CItemHolder(),
@@ -53,19 +54,19 @@ namespace ParentsEvent.Customs.Appliances
         };
 
         public override bool IsPurchasable => true;
-        
+
         public override void OnRegister(Appliance gameDataObject)
         {
             base.OnRegister(gameDataObject);
-            
+
             DirtPatchClientView dirtPatchClientView = gameDataObject.Prefab.AddComponent<DirtPatchClientView>();
             HoldPointContainer holdPointContainer = gameDataObject.Prefab.AddComponent<HoldPointContainer>();
-            
-            dirtPatchClientView.HoldPoints = new []
+
+            dirtPatchClientView.HoldPoints = new[]
             {
                 gameDataObject.Prefab.GetChild("HoldPoint"),
             };
-            
+
             DirtPatchView dirtPatchView = gameDataObject.Prefab.AddComponent<DirtPatchView>();
             dirtPatchView.WateredLayer = gameDataObject.Prefab.GetChild("FlowerPot/WetDirt");
         }
