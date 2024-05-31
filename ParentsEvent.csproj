@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net472</TargetFramework>
+		<Configurations>Release;Debug</Configurations>
+		<AssemblyName>$(MSBuildProjectName)-Workshop</AssemblyName>
+		<LangVersion>latest</LangVersion>
+		<NoWarn>CS0114</NoWarn>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+		<AssetBundlePath>$(ProjectDir)UnityProject - ParentsEvent\content\mod.assets</AssetBundlePath>
+	</PropertyGroup>
+	
+	<ItemGroup>
+	  <Compile Remove="content\**" />
+	  <Compile Remove="UnityProject - ParentsEvent\**" />
+	  <EmbeddedResource Remove="content\**" />
+	  <EmbeddedResource Remove="UnityProject - ParentsEvent\**" />
+	  <None Remove="UnityProject - ParentsEvent\**" />
+	</ItemGroup>
+  
+	<ItemGroup>
+		<PackageReference Include="Yariazen.PlateUp.ModBuildUtilities" Version="1.10.21" />
+		<PackageReference Include="Krafs.Publicizer" Version="2.2.1">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Changelogs\" />
+	  <Folder Include="Changelogs\Github" />
+	  <Folder Include="Changelogs\Workshop" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Publicize Include="KitchenMode:Kitchen.LimitedItemSourceView.Items" />
+		<Publicize Include="KitchenMode:Kitchen.LimitedItemSourceView.DisplayedItems" />
+		<Publicize Include="Kitchen.Common:Kitchen.CItemProvider.Item" />
+	</ItemGroup>
+</Project>
+
