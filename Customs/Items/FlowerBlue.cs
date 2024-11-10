@@ -10,6 +10,7 @@ namespace ParentsEvent.Customs.Items
         public override string UniqueNameID => "FlowerBlue";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("Flower Blue").AssignMaterialsByNames();
         public override string ColourBlindTag => "B";
+        public override ItemValue ItemValue => ItemValue.Medium;
 
         public override void OnRegister(Item gameDataObject)
         {

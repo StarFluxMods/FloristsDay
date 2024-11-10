@@ -40,7 +40,8 @@ namespace ParentsEvent.Customs.ItemGroups
         public override bool PreventExplicitSplit => true;
         public override bool SplitByComponents => true;
         public override Item SplitByComponentsHolder => (Item)GDOUtils.GetCustomGameDataObject<EmptyWateringCan>().GameDataObject;
-        public override int SplitCount => 3;
+        public override int SplitCount => 5;
         public override float SplitSpeed => 1;
+        public override bool IsIndisposable => true;
     }
 }

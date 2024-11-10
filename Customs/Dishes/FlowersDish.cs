@@ -43,7 +43,7 @@ namespace ParentsEvent.Customs.Dishes
         {
             {
                 Locale.English,
-                "Water patches of dirt to grow flowers, then place them in a vase."
+                "Add water to a Watering Can, water patches of dirt to grow flowers, then place them in a vase."
             }
         };
 

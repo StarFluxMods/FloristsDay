@@ -13,6 +13,7 @@ namespace ParentsEvent.Customs.Dishes
     {
         public override string UniqueNameID => "RolledAlmondDessertDish";
         public override DishType Type => DishType.Dessert;
+        public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
 
         public override List<Dish.MenuItem> ResultingMenuItems => new List<Dish.MenuItem>
         {
