@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace ParentsEvent.Customs.ItemGroups
 {
-    public class FlowerVase : CustomItemGroup<ItemGroupView>
+    public class FlowerVase : CustomItemGroup
     {
         public override string UniqueNameID => "FlowerVase";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("Vase Flowers").AssignMaterialsByNames();

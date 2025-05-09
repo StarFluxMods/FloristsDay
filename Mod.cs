@@ -44,6 +44,7 @@ namespace ParentsEvent
             Bundle = mod.GetPacks<AssetBundleModPack>().SelectMany(e => e.AssetBundles).FirstOrDefault() ?? throw new MissingAssetBundleException(MOD_GUID);
             Logger = InitLogger();
 
+            // RefGenerator.GenerateGDOReferences(Assembly.GetExecutingAssembly(), Path.Combine(Application.persistentDataPath, "GeneratedReferences.cs"));
             Events.BuildGameDataEvent += (s, args) =>
             {
                 Appliance wateringCanProvider = (Appliance)GDOUtils.GetCustomGameDataObject<WateringCanProvider>().GameDataObject;

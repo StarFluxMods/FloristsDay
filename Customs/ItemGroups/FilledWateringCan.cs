@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace ParentsEvent.Customs.ItemGroups
 {
-    public class FilledWateringCan : CustomItemGroup<ItemGroupView>
+    public class FilledWateringCan : CustomItemGroup
     {
         public override string UniqueNameID => "FilledWateringCan";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("FilledWateringCan").AssignMaterialsByNames();

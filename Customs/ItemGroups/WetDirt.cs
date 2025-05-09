@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace ParentsEvent.Customs.ItemGroups
 {
-    public class WetDirt : CustomItemGroup<ItemGroupView>
+    public class WetDirt : CustomItemGroup
     {
         public override string UniqueNameID => "WetDirt";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("WetDirt");

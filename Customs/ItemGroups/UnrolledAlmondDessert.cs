@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace ParentsEvent.Customs.ItemGroups
 {
-    public class UnrolledAlmondDessert : CustomItemGroup<ItemGroupView>
+    public class UnrolledAlmondDessert : CustomItemGroup
     {
         public override string UniqueNameID => "UnrolledAlmondDessert";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("RoastedNutsUnrolled").AssignMaterialsByNames();
