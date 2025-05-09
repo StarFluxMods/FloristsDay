@@ -4,6 +4,7 @@ using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
 using ParentsEvent.Customs.Items;
+using ParentsEvent.Utilities;
 using UnityEngine;
 
 namespace ParentsEvent.Customs.ItemGroups
@@ -19,7 +20,7 @@ namespace ParentsEvent.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetCustomGameDataObject<EmptyVase>().GameDataObject
+                    GDOReferences.EmptyVase
                 },
                 Min = 1,
                 Max = 1,
@@ -29,15 +30,15 @@ namespace ParentsEvent.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetCustomGameDataObject<FlowerRed>().GameDataObject,
-                    (Item)GDOUtils.GetCustomGameDataObject<FlowerRed>().GameDataObject,
-                    (Item)GDOUtils.GetCustomGameDataObject<FlowerRed>().GameDataObject,
-                    (Item)GDOUtils.GetCustomGameDataObject<FlowerGreen>().GameDataObject,
-                    (Item)GDOUtils.GetCustomGameDataObject<FlowerGreen>().GameDataObject,
-                    (Item)GDOUtils.GetCustomGameDataObject<FlowerGreen>().GameDataObject,
-                    (Item)GDOUtils.GetCustomGameDataObject<FlowerBlue>().GameDataObject,
-                    (Item)GDOUtils.GetCustomGameDataObject<FlowerBlue>().GameDataObject,
-                    (Item)GDOUtils.GetCustomGameDataObject<FlowerBlue>().GameDataObject,
+                    GDOReferences.FlowerRed,
+                    GDOReferences.FlowerRed,
+                    GDOReferences.FlowerRed,
+                    GDOReferences.FlowerGreen,
+                    GDOReferences.FlowerGreen,
+                    GDOReferences.FlowerGreen,
+                    GDOReferences.FlowerBlue,
+                    GDOReferences.FlowerBlue,
+                    GDOReferences.FlowerBlue,
                 },
                 Min = 2,
                 Max = 3,
@@ -48,22 +49,22 @@ namespace ParentsEvent.Customs.ItemGroups
         {
             new ItemGroupView.ColourBlindLabel
             {
-                Item = (Item)GDOUtils.GetCustomGameDataObject<FlowerBlue>().GameDataObject,
+                Item = GDOReferences.FlowerBlue,
                 Text = "B"
             },
             new ItemGroupView.ColourBlindLabel
             {
-                Item = (Item)GDOUtils.GetCustomGameDataObject<FlowerGreen>().GameDataObject,
+                Item = GDOReferences.FlowerGreen,
                 Text = "O"
             },
             new ItemGroupView.ColourBlindLabel
             {
-                Item = (Item)GDOUtils.GetCustomGameDataObject<FlowerRed>().GameDataObject,
+                Item = GDOReferences.FlowerRed,
                 Text = "R"
             }
         };
 
-        public override Item DirtiesTo => (Item)GDOUtils.GetCustomGameDataObject<EmptyVase>().GameDataObject;
+        public override Item DirtiesTo => GDOReferences.EmptyVase;
 
         public override void OnRegister(ItemGroup gameDataObject)
         {
@@ -75,7 +76,7 @@ namespace ParentsEvent.Customs.ItemGroups
 
             view.ComponentGroups.Add(new ItemGroupView.ComponentGroup
             {
-                Item = (Item)GDOUtils.GetCustomGameDataObject<FlowerRed>().GameDataObject,
+                Item = GDOReferences.FlowerRed,
                 Objects = new List<GameObject>
                 {
                     gameDataObject.Prefab.GetChild("Group 1/Point3/"),
@@ -86,7 +87,7 @@ namespace ParentsEvent.Customs.ItemGroups
 
             view.ComponentGroups.Add(new ItemGroupView.ComponentGroup
             {
-                Item = (Item)GDOUtils.GetCustomGameDataObject<FlowerBlue>().GameDataObject,
+                Item = GDOReferences.FlowerBlue,
                 Objects = new List<GameObject>
                 {
                     gameDataObject.Prefab.GetChild("Group 1/Point1/"),
@@ -97,7 +98,7 @@ namespace ParentsEvent.Customs.ItemGroups
 
             view.ComponentGroups.Add(new ItemGroupView.ComponentGroup
             {
-                Item = (Item)GDOUtils.GetCustomGameDataObject<FlowerGreen>().GameDataObject,
+                Item = GDOReferences.FlowerGreen,
                 Objects = new List<GameObject>
                 {
                     gameDataObject.Prefab.GetChild("Group 1/Point2/"),
@@ -108,7 +109,7 @@ namespace ParentsEvent.Customs.ItemGroups
 
             view.ComponentGroups.Add(new ItemGroupView.ComponentGroup
             {
-                Item = (Item)GDOUtils.GetCustomGameDataObject<EmptyVase>().GameDataObject,
+                Item = GDOReferences.EmptyVase,
                 GameObject = gameDataObject.Prefab.GetChild("Empty Vase")
             });
 

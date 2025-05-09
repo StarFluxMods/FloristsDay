@@ -4,6 +4,7 @@ using KitchenData;
 using KitchenLib.Customs;
 using KitchenLib.Utils;
 using ParentsEvent.Customs.Items;
+using ParentsEvent.Utilities;
 using UnityEngine;
 
 namespace ParentsEvent.Customs.Appliances
@@ -20,7 +21,7 @@ namespace ParentsEvent.Customs.Appliances
             {
                 Available = 1,
                 Maximum = 1,
-                Item = GDOUtils.GetCustomGameDataObject<EmptyWateringCan>().ID,
+                Item = GDOReferences.EmptyWateringCan.ID,
                 PreventReturns = true,
                 AutoPlaceOnHolder = true
             },

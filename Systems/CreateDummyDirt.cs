@@ -3,6 +3,7 @@ using KitchenLib.Utils;
 using KitchenMods;
 using ParentsEvent.Components;
 using ParentsEvent.Customs.Items;
+using ParentsEvent.Utilities;
 using Unity.Collections;
 using Unity.Entities;
 
@@ -34,7 +35,7 @@ namespace ParentsEvent.Systems
                         EntityManager.AddComponentData(dryDirt, new CCreateItem
                         {
                             Holder = dirtPatch,
-                            ID = GDOUtils.GetCustomGameDataObject<DryDirt>().ID
+                            ID = GDOReferences.DryDirt.ID
                         });
                         EntityManager.AddComponentData(dirtPatch, new CItemHolderPreventTransfer
                         {

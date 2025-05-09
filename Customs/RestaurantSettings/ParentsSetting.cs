@@ -6,6 +6,7 @@ using KitchenLib.Customs;
 using KitchenLib.References;
 using KitchenLib.Utils;
 using ParentsEvent.Customs.Dishes;
+using ParentsEvent.Utilities;
 using UnityEngine;
 
 namespace ParentsEvent.Customs.RestaurantSettings
@@ -19,20 +20,20 @@ namespace ParentsEvent.Customs.RestaurantSettings
         {
             new CountrysideDecorator.DecorationsConfiguration
             {
-                Cobblestone = (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.Cobblestone),
-                Ground = (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.CountrysideGround),
-                FrontBorder = (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.LogWall),
+                Cobblestone = GDOReferences.Cobblestone,
+                Ground = GDOReferences.CountrysideGround,
+                FrontBorder = GDOReferences.LogWall,
                 BorderSpacing = 1,
                 Scatters = new List<CountrysideDecorator.DecorationsConfiguration.Scatter>
                 {
                     new CountrysideDecorator.DecorationsConfiguration.Scatter
                     {
-                        Appliance = (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.Tree),
+                        Appliance = GDOReferences.Tree,
                         Probability = 0.35f
                     },
                     new CountrysideDecorator.DecorationsConfiguration.Scatter
                     {
-                        Appliance = (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.Rock),
+                        Appliance = GDOReferences.Rock,
                         Probability = 0.1f
                     }
                 }
@@ -40,7 +41,7 @@ namespace ParentsEvent.Customs.RestaurantSettings
         };
 
         public override UnlockPack UnlockPack { get; protected set; }
-        public override Dish FixedDish => (Dish)GDOUtils.GetCustomGameDataObject<FlowersDish>().GameDataObject;
+        public override Dish FixedDish => GDOReferences.FlowersDish;
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("Parents Icon").AssignMaterialsByNames();
         public override bool AlwaysLight => true;
 

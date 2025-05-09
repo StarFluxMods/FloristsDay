@@ -5,6 +5,7 @@ using KitchenLib.References;
 using KitchenLib.Utils;
 using ParentsEvent.Customs.ItemGroups;
 using ParentsEvent.Customs.Items;
+using ParentsEvent.Utilities;
 using UnityEngine;
 
 namespace ParentsEvent.Customs.Dishes
@@ -19,7 +20,7 @@ namespace ParentsEvent.Customs.Dishes
         {
             new Dish.MenuItem
             {
-                Item = (Item)GDOUtils.GetCustomGameDataObject<RolledAlmondDessert>().GameDataObject,
+                Item = GDOReferences.RolledAlmondDessert,
                 Phase = MenuPhase.Dessert,
                 Weight = 1,
                 DynamicMenuType = DynamicMenuType.Static
@@ -28,22 +29,22 @@ namespace ParentsEvent.Customs.Dishes
 
         public override HashSet<Item> MinimumIngredients => new HashSet<Item>
         {
-            (Item)GDOUtils.GetExistingGDO(ItemReferences.NutsIngredient),
-            (Item)GDOUtils.GetExistingGDO(ItemReferences.Sugar),
+            GDOReferences.Sugar,
+            GDOReferences.NutsIngredient,
         };
 
         public override HashSet<Process> RequiredProcesses => new HashSet<Process>
         {
-            (Process)GDOUtils.GetExistingGDO(ProcessReferences.Chop),
-            (Process)GDOUtils.GetExistingGDO(ProcessReferences.Cook),
-            (Process)GDOUtils.GetExistingGDO(ProcessReferences.Knead),
+            GDOReferences.Chop,
+            GDOReferences.Cook,
+            GDOReferences.Knead,
         };
 
         public override bool RequiredNoDishItem => true;
 
         public override List<Unlock> HardcodedRequirements => new List<Unlock>
         {
-            (Dish)GDOUtils.GetCustomGameDataObject<FlowersDish>().GameDataObject
+            GDOReferences.FlowersDish
         };
 
         public override Dictionary<Locale, string> Recipe => new Dictionary<Locale, string>

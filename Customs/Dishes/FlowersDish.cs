@@ -5,6 +5,7 @@ using KitchenLib.References;
 using KitchenLib.Utils;
 using ParentsEvent.Customs.ItemGroups;
 using ParentsEvent.Customs.Items;
+using ParentsEvent.Utilities;
 using UnityEngine;
 
 namespace ParentsEvent.Customs.Dishes
@@ -18,7 +19,7 @@ namespace ParentsEvent.Customs.Dishes
         {
             new Dish.MenuItem
             {
-                Item = (Item)GDOUtils.GetCustomGameDataObject<FlowerVase>().GameDataObject,
+                Item = GDOReferences.FlowerVase,
                 Phase = MenuPhase.Main,
                 Weight = 1,
                 DynamicMenuType = DynamicMenuType.Static
@@ -27,9 +28,9 @@ namespace ParentsEvent.Customs.Dishes
 
         public override HashSet<Item> MinimumIngredients => new HashSet<Item>
         {
-            (Item)GDOUtils.GetCustomGameDataObject<EmptyVase>().GameDataObject,
-            (Item)GDOUtils.GetCustomGameDataObject<EmptyWateringCan>().GameDataObject,
-            (Item)GDOUtils.GetExistingGDO(ItemReferences.Water)
+            GDOReferences.EmptyVase,
+            GDOReferences.EmptyWateringCan,
+            GDOReferences.Water
         };
 
         public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("Flowers Icon").AssignMaterialsByNames();

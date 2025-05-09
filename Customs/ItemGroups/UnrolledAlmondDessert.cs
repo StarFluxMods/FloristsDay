@@ -5,6 +5,7 @@ using KitchenLib.Customs;
 using KitchenLib.References;
 using KitchenLib.Utils;
 using ParentsEvent.Customs.Items;
+using ParentsEvent.Utilities;
 using UnityEngine;
 
 namespace ParentsEvent.Customs.ItemGroups
@@ -20,8 +21,8 @@ namespace ParentsEvent.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetExistingGDO(ItemReferences.Sugar),
-                    (Item)GDOUtils.GetCustomGameDataObject<RoastedNuts>().GameDataObject
+                    GDOReferences.Sugar,
+                    GDOReferences.RoastedNuts,
                 },
                 Min = 2,
                 Max = 2
@@ -32,9 +33,9 @@ namespace ParentsEvent.Customs.ItemGroups
         {
             new Item.ItemProcess
             {
-                Process = (Process)GDOUtils.GetExistingGDO(ProcessReferences.Knead),
+                Process = GDOReferences.Knead,
                 Duration = 2,
-                Result = (Item)GDOUtils.GetCustomGameDataObject<RolledAlmondDessert>().GameDataObject
+                Result = GDOReferences.RolledAlmondDessert
             }
         };
     }

@@ -5,6 +5,7 @@ using KitchenLib.Customs;
 using KitchenLib.References;
 using KitchenLib.Utils;
 using ParentsEvent.Customs.Items;
+using ParentsEvent.Utilities;
 using UnityEngine;
 
 namespace ParentsEvent.Customs.ItemGroups
@@ -20,8 +21,8 @@ namespace ParentsEvent.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetExistingGDO(ItemReferences.Water),
-                    (Item)GDOUtils.GetCustomGameDataObject<DryDirt>().GameDataObject
+                    GDOReferences.Water,
+                    GDOReferences.DryDirt
                 },
                 Min = 2,
                 Max = 2

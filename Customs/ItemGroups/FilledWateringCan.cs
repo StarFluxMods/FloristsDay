@@ -5,6 +5,7 @@ using KitchenLib.Customs;
 using KitchenLib.References;
 using KitchenLib.Utils;
 using ParentsEvent.Customs.Items;
+using ParentsEvent.Utilities;
 using UnityEngine;
 
 namespace ParentsEvent.Customs.ItemGroups
@@ -20,7 +21,7 @@ namespace ParentsEvent.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetCustomGameDataObject<EmptyWateringCan>().GameDataObject
+                    GDOReferences.EmptyWateringCan
                 },
                 Min = 1,
                 Max = 1
@@ -29,7 +30,7 @@ namespace ParentsEvent.Customs.ItemGroups
             {
                 Items = new List<Item>
                 {
-                    (Item)GDOUtils.GetExistingGDO(ItemReferences.Water)
+                    GDOReferences.Water
                 },
                 Min = 1,
                 Max = 1
@@ -39,7 +40,7 @@ namespace ParentsEvent.Customs.ItemGroups
         public override bool AllowSplitMerging => true;
         public override bool PreventExplicitSplit => true;
         public override bool SplitByComponents => true;
-        public override Item SplitByComponentsHolder => (Item)GDOUtils.GetCustomGameDataObject<EmptyWateringCan>().GameDataObject;
+        public override Item SplitByComponentsHolder => GDOReferences.EmptyWateringCan;
         public override int SplitCount => 5;
         public override float SplitSpeed => 1;
         public override bool IsIndisposable => true;

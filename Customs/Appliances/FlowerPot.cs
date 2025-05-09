@@ -5,6 +5,7 @@ using KitchenLib.Customs;
 using KitchenLib.Utils;
 using ParentsEvent.Components;
 using ParentsEvent.Customs.Items;
+using ParentsEvent.Utilities;
 using ParentsEvent.Views;
 using Unity.Collections;
 using UnityEngine;
@@ -24,9 +25,9 @@ namespace ParentsEvent.Customs.Appliances
                 TimeSinceLastItem = 0,
                 FlowerTypes = new FixedList32<int>()
                 {
-                    GDOUtils.GetCustomGameDataObject<FlowerRed>().ID,
-                    GDOUtils.GetCustomGameDataObject<FlowerGreen>().ID,
-                    GDOUtils.GetCustomGameDataObject<FlowerBlue>().ID
+                    GDOReferences.FlowerRed.ID,
+                    GDOReferences.FlowerGreen.ID,
+                    GDOReferences.FlowerBlue.ID
                 },
                 RequiresWatering = true,
                 TimeSinceLastWater = 0,

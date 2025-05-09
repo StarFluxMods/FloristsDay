@@ -2,6 +2,7 @@
 using KitchenLib.Customs;
 using KitchenLib.Utils;
 using ParentsEvent.Customs.Appliances;
+using ParentsEvent.Utilities;
 using UnityEngine;
 
 namespace ParentsEvent.Customs.Items
@@ -10,7 +11,7 @@ namespace ParentsEvent.Customs.Items
     {
         public override string UniqueNameID => "EmptyWateringCan";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("EmptyWateringCan").AssignMaterialsByNames();
-        public override Appliance DedicatedProvider => (Appliance)GDOUtils.GetCustomGameDataObject<WateringCanProvider>().GameDataObject;
+        public override Appliance DedicatedProvider => GDOReferences.WateringCanProvider;
         public override bool IsIndisposable => true;
     }
 }

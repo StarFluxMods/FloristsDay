@@ -1,4 +1,5 @@
 ﻿using KitchenData;
+using KitchenLib.References;
 using KitchenLib.Utils;
 using ParentsEvent.Customs.Appliances;
 using ParentsEvent.Customs.Dishes;
@@ -13,7 +14,36 @@ namespace ParentsEvent.Utilities
     {
         #region Vanilla
 
+        #region Item
+        public static Item Water => (Item)GDOUtils.GetExistingGDO(ItemReferences.Water);
+        public static Item NutsIngredient => (Item)GDOUtils.GetExistingGDO(ItemReferences.NutsIngredient);
+        public static Item Sugar => (Item)GDOUtils.GetExistingGDO(ItemReferences.Sugar);
+
+        #endregion
+
+        #region LayoutProfile
+        public static LayoutProfile DinerLayout => (LayoutProfile)GDOUtils.GetExistingGDO(LayoutProfileReferences.DinerLayout);
+
+        #endregion
+
+        #region Appliance
+        public static Appliance Cobblestone => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.Cobblestone);
+        public static Appliance CountrysideGround => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.CountrysideGround);
+        public static Appliance LogWall => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.LogWall);
+        public static Appliance Tree => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.Tree);
+        public static Appliance Rock => (Appliance)GDOUtils.GetExistingGDO(ApplianceReferences.Rock);
+
+        #endregion
         
+        #region Process
+
+        public static Process Chop => (Process)GDOUtils.GetExistingGDO(ProcessReferences.Chop);
+        public static Process Cook => (Process)GDOUtils.GetExistingGDO(ProcessReferences.Cook);
+        public static Process Clean => (Process)GDOUtils.GetExistingGDO(ProcessReferences.Clean);
+        public static Process SteepTea => (Process)GDOUtils.GetExistingGDO(ProcessReferences.SteepTea);
+        public static Process Knead => (Process)GDOUtils.GetExistingGDO(ProcessReferences.Knead);
+
+        #endregion
 
         #endregion
         
