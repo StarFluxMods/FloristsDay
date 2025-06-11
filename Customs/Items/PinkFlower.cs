@@ -27,7 +27,7 @@ namespace ParentsEvent.Customs.Items
             new CCanWilt
             {
                 WiltItem = GDOReferences.WiltedFlower.ID,
-                WiltDelay = 5
+                WiltDelay = 15
             }
         };
     }

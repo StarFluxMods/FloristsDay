@@ -18,7 +18,7 @@ namespace ParentsEvent.Customs.UnlockCard
         };
         public override UnlockGroup UnlockGroup => UnlockGroup.Generic;
         public override CardType CardType => CardType.Default;
-        public override DishCustomerChange CustomerMultiplier => DishCustomerChange.SmallDecrease;
+        public override DishCustomerChange CustomerMultiplier => DishCustomerChange.LargeDecrease;
         public override Unlock.RewardLevel ExpReward => Unlock.RewardLevel.Medium;
 
         public override List<Unlock> HardcodedRequirements => new List<Unlock>

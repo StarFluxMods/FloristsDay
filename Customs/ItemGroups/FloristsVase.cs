@@ -118,7 +118,7 @@ namespace ParentsEvent.Customs.ItemGroups
             }
 
             Transform t = gameDataObject.Prefab.transform.Find("Colour Blind").transform;
-            t.position = new Vector3(t.position.x, t.position.y + 0.5f, t.position.z - 0.2f);
+            t.position = new Vector3(t.position.x, t.position.y + 0.5f, t.position.z - 0.5f);
         }
     }
 }
