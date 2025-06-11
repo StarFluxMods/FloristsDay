@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &776810364932137650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1954296059146023204}
+  m_Layer: 0
+  m_Name: ChocolateBarkIcon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1954296059146023204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776810364932137650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1545685158500677252}
+  - {fileID: 2304177235083096183}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4966260777897308921
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1954296059146023204}
+    m_Modifications:
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5846999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5847001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5846999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.141
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.012829
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.146
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.91909415
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38391677
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.062900506
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.06258941
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 45.527
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 5.534
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -5.468
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544578015138995911, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_Name
+      value: ChocolateBarkPortion (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+--- !u!4 &1545685158500677252 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+  m_PrefabInstance: {fileID: 4966260777897308921}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5648296061621236746
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1954296059146023204}
+    m_Modifications:
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5847
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5847
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5847
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.15850998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.010387
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17887
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8852447
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.46044186
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.02792323
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.05962823
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 54.939
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.546
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 7.991
+      objectReference: {fileID: 0}
+    - target: {fileID: 6544578015138995911, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+      propertyPath: m_Name
+      value: ChocolateBarkPortion (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+--- !u!4 &2304177235083096183 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5879682045722002557, guid: 3b4dd54ae116d144eb653d7c239aa917, type: 3}
+  m_PrefabInstance: {fileID: 5648296061621236746}
+  m_PrefabAsset: {fileID: 0}

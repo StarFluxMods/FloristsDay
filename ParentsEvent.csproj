@@ -21,7 +21,7 @@
 	</ItemGroup>
   
 	<ItemGroup>
-		<PackageReference Include="Yariazen.PlateUp.ModBuildUtilities" Version="1.10.21" />
+		<PackageReference Include="Yariazen.PlateUp.ModBuildUtilities" Version="1.11.5"/>
 		<PackageReference Include="Krafs.Publicizer" Version="2.2.1">
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
@@ -30,12 +30,15 @@
 
 	<ItemGroup>
 	  <Folder Include="Changelogs\" />
+	  <Folder Include="Customs\Legacy\" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<Publicize Include="KitchenMode:Kitchen.LimitedItemSourceView.Items" />
 		<Publicize Include="KitchenMode:Kitchen.LimitedItemSourceView.DisplayedItems" />
 		<Publicize Include="Kitchen.Common:Kitchen.CItemProvider.Item" />
+		<Publicize Include="KitchenMode:Kitchen.ItemSourceView.Renderer" />
+		<Publicize Include="KitchenMode:Kitchen.ItemSourceView.Animator" />
 	</ItemGroup>
 </Project>
 
