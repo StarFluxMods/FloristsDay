@@ -13,7 +13,7 @@ namespace ParentsEvent.Customs.ItemGroups
     {
         public override string UniqueNameID => "PottedOrangePetals";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("PottedOrangePetals").AssignMaterialsByNames();
-        public override bool IsIndisposable => true;
+        public override Item DisposesTo => GDOReferences.Pot;
 
         public override List<ItemGroup.ItemSet> Sets => new()
         {

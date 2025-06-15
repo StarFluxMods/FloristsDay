@@ -22,5 +22,6 @@ namespace ParentsEvent.Customs.Items
         };
 
         public override Item SplitSubItem => GDOReferences.CookedPeas;
+        public override Item DisposesTo => GDOReferences.Pot;
     }
 }

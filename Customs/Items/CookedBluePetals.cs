@@ -23,6 +23,7 @@ namespace ParentsEvent.Customs.Items
         };
 
         public override Item SplitSubItem => GDOReferences.BluePetalSoup;
+        public override Item DisposesTo => GDOReferences.Pot;
 
         public override void OnRegister(Item gameDataObject)
         {
