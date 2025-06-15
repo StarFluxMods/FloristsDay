@@ -188,6 +188,29 @@ namespace ParentsEvent
                                 }
                             }
                         }
+                        
+                        // Add Process to Chopped Nuts
+                        if (args.gamedata.TryGet(GDOReferences.NutsChopped.ID, out Item NutsChopped))
+                        {
+                            bool found = false;
+                            foreach (Item.ItemProcess process in NutsChopped.Processes)
+                            {
+                                if (process.Process == GDOReferences.Cook && process.Result == GDOReferences.RoastedNuts)
+                                {
+                                    found = true;
+                                    break;
+                                }
+                            }
+                            if (!found)
+                            {
+                                NutsChopped.Processes.Add(new Item.ItemProcess
+                                {
+                                    Process = GDOReferences.Cook,
+                                    Result = GDOReferences.RoastedNuts,
+                                    Duration = 1
+                                });
+                            }
+                        }
                     }
                 }
             };

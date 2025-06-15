@@ -39,6 +39,7 @@
 		<Publicize Include="Kitchen.Common:Kitchen.CItemProvider.Item" />
 		<Publicize Include="KitchenMode:Kitchen.ItemSourceView.Renderer" />
 		<Publicize Include="KitchenMode:Kitchen.ItemSourceView.Animator" />
+		<Publicize Include="Kitchen.GameData:KitchenData.Item.Processes" />
 	</ItemGroup>
 </Project>
 
