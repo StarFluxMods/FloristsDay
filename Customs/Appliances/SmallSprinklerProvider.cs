@@ -27,7 +27,6 @@ namespace ParentsEvent.Customs.Appliances
             },
             new CItemHolder()
         };
-        public override bool SellOnlyAsDuplicate => true;
         public override bool IsPurchasable => true;
         public override PriceTier PriceTier => PriceTier.Medium;
         public override ShoppingTags ShoppingTags => ShoppingTags.Automation;

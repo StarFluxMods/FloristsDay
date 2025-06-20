@@ -22,9 +22,9 @@ namespace ParentsEvent
     {
         public const string MOD_GUID = "com.starfluxgames.parentsday";
         public const string MOD_NAME = "Florist's Day";
-        public const string MOD_VERSION = "0.2.1";
+        public const string MOD_VERSION = "0.2.2";
         public const string MOD_AUTHOR = "StarFluxGames";
-        public const string MOD_GAMEVERSION = ">=1.1.7";
+        public const string MOD_GAMEVERSION = ">=1.2.1";
 
         public static AssetBundle Bundle;
         public static KitchenLogger Logger;

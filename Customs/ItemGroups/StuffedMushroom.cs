@@ -14,6 +14,7 @@ namespace ParentsEvent.Customs.ItemGroups
         public override string UniqueNameID => "StuffedMushroom";
         public override GameObject Prefab => Mod.Bundle.LoadAsset<GameObject>("StuffedMushroom").AssignMaterialsByNames();
         public override ItemValue ItemValue => ItemValue.SideSmall;
+        public override ItemStorage ItemStorageFlags => ItemStorage.StackableFood;
 
         public override List<ItemGroup.ItemSet> Sets => new()
         {

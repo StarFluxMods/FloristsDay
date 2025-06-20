@@ -47,7 +47,7 @@ namespace ParentsEvent.Systems
                                         for (var i = 0; i < cItem.Items.Count; i++)
                                         {
                                             var item = cItem.Items[i];
-                                            if (item == GDOReferences.FloristsVase.ID) continue;
+                                            if (item == GDOReferences.Vase.ID) continue;
                                             cItem.Items.RemoveAt(i);
                                             Set(cItemHolder, cItem);
 
