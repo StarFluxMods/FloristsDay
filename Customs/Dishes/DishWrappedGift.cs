@@ -25,6 +25,11 @@ namespace ParentsEvent.Customs.Dishes
             "Gifted & Delicious",
         };
 
+        public override HashSet<Item> MinimumIngredients => new()
+        {
+            GDOReferences.CardboardBox
+        };
+
         public override HashSet<Process> RequiredProcesses => new HashSet<Process>
         {
             GDOReferences.Knead,
